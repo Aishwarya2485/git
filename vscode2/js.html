@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task
+    <script>
+       console.log('TASK 11');
+       console.log('A'-1);
+       console.log('A'+1);
+       console.log(2+'2'+'2');
+        console.log('hello'+'world'+89); 
+        console.log('hello'+'world'+89); 
+        console.log('hello'-'world'+89); 
+        console.log('hello'+78); 
+        console.log('78'-90+'2'); 
+        console.log(2-'2'+90); 
+        console.log(89-'90'/2); 
+        console.log((true==false) >2); 
+        console.log('TASK 12');
+        // extract first five letters from a string (' gfuh ieiuei ')
+        let string="Mountain";
+        console.log(string.slice(0,5),"'Extraction of first 5 letter'");
+        //get the length of a string and make it uppercase ('hduej dij')
+        let string1="Implicit Coercion";
+        console.log(string1.length,string1.toUpperCase(),"length of string & uppercase of string");
+        //take a string, make it lowercase and trim it (' biji jdo ')
+        let string2="  Incorrect word ";
+        console.log(string2.toLowerCase(),string2.trim(),"'lowercase of string & triming'");
+        //replace specified word in a string ('', '')
+        let string3=",";
+        console.log(string3.replace(",","Replaced"))
+        //random statements in implicit coercion e.g. (89 + 'hello' + 90 / 9)
+        console.log(89+'hello'+90/9);
+        console.log('9' + 2,"'String'");
+        console.log('8' - 2,"number");
+        console.log(true + 2,"number");
+        console.log(false + "testing","'string'");
+        console.log("TASK 13")
+        // create an object for animal, car
+        let animal={
+            Name:"Tiger",
+            Type:"Wild",
+            Diet:"Carnivore"
+        }
+        let car={
+            brand:"Tesla",
+            color:"Red",
+            year:"2025"
+        }
+        //find the duplicate in a string() (use array)- optional
+        let str = "duplicates";
+        let arr = str.split(""); 
+        console.log(arr); 
+        //reverse a string (use array method)
+        let string4 = "Lower";
+        let reversed = string4.split("").reverse().join("");
+        console.log(reversed);
+        // find the highest and lowest value in array
+        let arr1=[2,3,4,5,8,12,35,99];
+        let FindData1=arr1.find((ele,index) =>{
+            return ele>50;
+        })
+        console.log(FindData1,"Highest value");
+        
+        let FindData2=arr1.find((ele,index) =>{
+            return ele<10;
+        })
+        console.log(FindData2,"Lowest value");
+       //sorting of an array- optional
+        let arr2 = [45, 12, 78, 3, 46, 23];
+        let ascending=[45,12,78,3,46,23].sort((a,b) => a - b); // ascending
+        console.log("Ascending:",ascending);
+
+        arr2.sort((a, b) => b - a); 
+        console.log("Descending:", arr2);
+        // display first 3 elements in an array in UI
+        let arr3=["Aishwarya","Meghana","Hemanth","Manoj","Raki","Darshith","Anup","Adhi"]
+        console.log(arr3);
+        arr3.forEach((ele,index)=>{
+        if(index<=2){
+            console.log(ele,index);
+        }
+       })
+       //remove 4th (index) element and add 2 element there
+       arr3.splice(3,1,"Nisarga","Sagar");
+       console.log(arr3);
+       // Create parameterized method/function to multiply 3 numbers
+       function multiples(a,b,c){
+        console.log(a*b*c,"Multiply");
+       }
+       multiples(2,4,8);
+       //Create parameterized method to divide 2 number
+       function divide(u,v){
+        console.log(u/v,"Division");
+       }
+       divide(40,2);
+    </script>
+</body>
+</html>
